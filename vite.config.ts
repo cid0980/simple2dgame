@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  base: "/simple2dgame/", // IMPORTANT for GitHub Pages
+  base: "/simple2dgame/", 
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
