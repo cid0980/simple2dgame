@@ -259,7 +259,7 @@ export function App() {
         osc.start();
         osc.stop(context.currentTime + duration);
       } catch {
-        // ignore unsupported audio state
+        
       }
     },
     [soundEnabled],
@@ -318,7 +318,7 @@ export function App() {
           }
         });
       } catch {
-        // keep game responsive if firestore write fails
+        
       }
 
       const updated = await fetchLeaderboard();
@@ -440,7 +440,7 @@ export function App() {
           { merge: true },
         );
       } catch {
-        // keep gameplay local if cloud sync fails
+        
       }
     }, 280);
 
